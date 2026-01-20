@@ -1,0 +1,50 @@
+.title KiCad schematic
+.include "C:/Users/dakot/Documents/KiCad/9.0/spice/KiCad-Spice-Library/Models/Digital Logic/74HC.LIB"
+.include "C:/Users/dakot/Documents/KiCad/9.0/spice/KiCad-Spice-Library/Models/Digital Logic/74LS.LIB"
+.include "C:/Users/dakot/Documents/KiCad/9.0/spice/KiCad-Spice-Library/Models/Diode/led.lib"
+.include "C:/Users/dakot/Documents/KiCad/9.0/spice/KiCad-Spice-Library/Models/Transistor/BJT/BJT.lib"
+.include "C:/Users/dakot/Documents/KiCad/9.0/spice/components/lm358/lm358DT.txt"
+R3 Net-_U1A-+_ /Red_Osc 10k
+XU1 /Red_Osc Net-_U1A--_ Net-_U1A-+_ GND Net-_U1B-+_ Net-_U1B--_ /Grn_Osc HighV LM358DT
+R1 Net-_U1A--_ /Red_Osc 200k
+R23 Net-_U1A--_ Net-_SW22-A_ 200k
+R24 Net-_U1A--_ Net-_SW21-A_ 100k
+C1 GND Net-_U1A--_ 1u
+R5 GND Net-_U1A-+_ 10k
+VBT2 HighV GND DC 6 
+C2 GND Net-_U1B--_ 0.1u
+R25 Net-_U1B--_ Net-_SW19-A_ 100k
+R4 GND Net-_U1B-+_ 10k
+R27 Net-_U1B--_ /Grn_Osc 200k
+R26 Net-_U1B--_ Net-_SW20-A_ 200k
+XU2 /Red_Osc GND Net-_SW1-A_ Net-_U2A-Q1_ Net-_U2A-Q2_ Net-_U2A-Q3_ /Grn_Osc GND Net-_SW2-A_ Net-_U2B-Q1_ Net-_U2B-Q2_ Net-_U2B-Q3_ 74LS393_2x
+R6 Net-_U1B-+_ /Grn_Osc 10k
+R8 Net-_SW12-B_ GND 750k
+R7 Net-_SW11-B_ GND 750k
+R13 Net-_SW17-B_ GND 750k
+R14 Net-_SW18-B_ GND 750k
+R12 Net-_SW16-B_ GND 750k
+R10 Net-_SW14-B_ GND 750k
+R11 Net-_SW15-B_ GND 750k
+R9 Net-_SW13-B_ GND 750k
+XU3 Net-_SW1-B_ Net-_U2A-Q1_ Net-_U2A-Q2_ Net-_U2A-Q3_ Net-_SW11-B_ Net-_SW12-B_ Net-_SW13-B_ Net-_SW14-B_ Net-_SW15-B_ Net-_SW16-B_ Net-_SW17-B_ Net-_SW18-B_ unconnected-_U3-Y-Pad5_ Net-_Q1-B_ Net-_SW15-B_ HighV NC-U3-0 NC-U3-1 NC-U3-2 74HC151
+D4 HighV Net-_D1-K_ LED_GENERAL
+D3 HighV Net-_D1-K_ LED_GENERAL
+D1 HighV Net-_D1-K_ LED_GENERAL
+Q1 GND Net-_Q1-B_ Net-_D1-K_ 2N2222
+D2 HighV Net-_D1-K_ LED_GENERAL
+XU4 Net-_SW2-B_ Net-_U2B-Q1_ Net-_U2B-Q2_ Net-_U2B-Q3_ Net-_SW3-B_ Net-_SW4-B_ Net-_SW5-B_ Net-_SW6-B_ Net-_SW7-B_ Net-_SW8-B_ Net-_SW9-B_ Net-_SW10-B_ unconnected-_U4-Y-Pad5_ Net-_Q2-B_ Net-_SW7-B_ HighV NC-U4-0 NC-U4-1 NC-U4-2 74HC151
+D7 HighV Net-_D5-K_ LED_GENERAL
+D8 HighV Net-_D5-K_ LED_GENERAL
+D5 HighV Net-_D5-K_ LED_GENERAL
+Q2 GND Net-_Q2-B_ Net-_D5-K_ 2N2222
+D6 HighV Net-_D5-K_ LED_GENERAL
+R18 Net-_SW6-B_ HighV 750k
+R19 Net-_SW7-B_ HighV 750k
+R17 Net-_SW5-B_ HighV 750k
+R20 Net-_SW8-B_ HighV 750k
+R21 Net-_SW9-B_ HighV 750k
+R22 Net-_SW10-B_ HighV 750k
+R15 Net-_SW3-B_ HighV 750k
+R16 Net-_SW4-B_ HighV 750k
+.end
