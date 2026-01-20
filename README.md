@@ -1,6 +1,8 @@
 # Ornament2025
 Repo of associated files for my Cristmas ornament 2025
 
+See https://dakotawinslow.com for more details.
+
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 This work is licensed under a
